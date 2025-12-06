@@ -43,30 +43,28 @@ def complete_task():
     except ValueError:
         print("Please enter a valid number.")
 
-def main():
-    print("Welcome to your Simple To-Do App!")
-    while True:
-        print("\n--- Menu ---")
-        print("1. Show tasks")
-        print("2. Add task")
-        print("3. Complete task")
-        print("4. Exit")
-        choice = input("Choose an option (1-4): ").strip()
+# ----------------------------
+# Run the To-Do App directly
+# ----------------------------
+print("Welcome to your Simple To-Do App!")
+while True:
+    print("\n--- Menu ---")
+    print("1. Show tasks")
+    print("2. Add task")
+    print("3. Complete task")
+    print("4. Exit")
+    choice = input("Choose an option (1-4): ").strip()
 
-        if choice == "1":
-            show_tasks()
-        elif choice == "2":
-            add_task()
-        elif choice == "3":
-            complete_task()
-        elif choice == "4":
-            print("Goodbye! Have a productive day!")
-            print("*"*40)
-            print("/nLearn with Sithum")
-            break
-        else:
-            print("Invalid choice. Please try 1-4.")
-
-if __name__ == "__main__":
-    main()
-  
+    if choice == "1":
+        show_tasks()
+    elif choice == "2":
+        add_task()
+    elif choice == "3":
+        complete_task()
+    elif choice == "4":
+        print("Goodbye! Have a productive day!")
+        print("*"*40)
+        print("\nLearn with Sithum")
+        break
+    else:
+        print("Invalid choice. Please try 1-4.")
